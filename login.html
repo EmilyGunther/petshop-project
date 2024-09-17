@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PetCare - Login e Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetCare</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="O que seu pet precisa?">
+            <i class="search-icon">&#128269;</i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <h2>Cadastro do Cliente</h2>
+            <form action="#" method="post">
+                <!-- Cadastro do Cliente -->
+                <fieldset>
+                    <legend>Informações do Cliente</legend>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <!-- Cadastro do Pet -->
+                <fieldset>
+                    <legend>Informações do Pet</legend>
+
+                    <label for="pet-name">Nome do Pet:</label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+
+                    <label for="pet-type">Tipo de Animal:</label>
+                    <select id="pet-type" name="pet-type" required>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+
+                    <label for="breed">Raça:</label>
+                    <input type="text" id="breed" name="breed" required>
+
+                    <label for="port">Porte:</label><br>
+                    <input type="radio" id="pequeno" name="port" value="pequeno">
+                    <label for="pequeno">Pequeno</label><br>
+                    <input type="radio" id="medio" name="port" value="medio">
+                    <label for="medio">Medio</label><br>
+                    <input type="radio" id="grande" name="port" value="grande">
+                    <label for="grande">Grande</label><br>
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>PetCare é a sua solução para o cuidado e bem-estar do seu pet. Oferecemos uma ampla gama de produtos e serviços para garantir que seu amigo de quatro patas esteja sempre feliz e saudável.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:contato@petcare.com">contato@petcare.com</a></p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua dos Animais, 123, Canoas - RS</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetCare. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

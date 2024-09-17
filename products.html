@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PetCare - Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetCare</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="O que seu pet precisa?">
+            <i class="search-icon">&#128269;</i> <!-- Ícone de lupa -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Produtos</h2>
+            <div class="product-list">
+                <!-- Produto 1 com carrossel -->
+                <article class="product">
+                    <h3>Produto 1</h3>
+                    <div class="carousel-container" id="carousel-1">
+                        <img class="product-carousel-img" src="images/img-racao1.jpg" alt="Produto 1 - Imagem 1">
+                        <img class="product-carousel-img" src="images/img-racao2.jpg" alt="Produto 1 - Imagem 2" style="display:none;">
+                        <button class="prev" onclick="prevImage(0)">&#10094;</button>
+                        <button class="next" onclick="nextImage(0)">&#10095;</button>
+                    </div>
+                    <p>Descrição do produto 1.</p>
+                    <p>Preço: R$xx,xx</p>
+                </article>
+
+                <!-- Produto 2 com carrossel -->
+                <article class="product">
+                    <h3>Produto 2</h3>
+                    <div class="carousel-container" id="carousel-2">
+                        <img class="product-carousel-img" src="images/img-racao3.jpg" alt="Produto 2 - Imagem 1">
+                        <img class="product-carousel-img" src="images/img-racao4.jpg" alt="Produto 1 - Imagem 2" style="display:none;">
+                        <button class="prev" onclick="prevImage(1)">&#10094;</button>
+                        <button class="next" onclick="nextImage(1)">&#10095;</button>
+                    </div>
+                    <p>Descrição do produto 2.</p>
+                    <p>Preço: R$xx,xx</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>PetCare é a sua solução para o cuidado e bem-estar do seu pet. Oferecemos uma ampla gama de produtos e serviços para garantir que seu amigo de quatro patas esteja sempre feliz e saudável.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:contato@petcare.com">contato@petcare.com</a></p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua dos Animais, 123, Canoas - RS</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetCare. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Adicionando o script para o carrossel -->
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

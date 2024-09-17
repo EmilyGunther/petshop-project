@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PetCare - Serviços</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PetCare</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="O que seu pet precisa?">
+            <i class="search-icon">&#128269;</i> <!-- Ícone de lupa -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="services">
+            <h2>Serviços</h2>
+            <form action="#" method="post" class="service-form">
+                <label for="pet">Escolha o Pet:</label>
+                <select id="pet" name="pet" required>
+                    <option value="pet1">Pet 1</option>
+                    <option value="pet2">Pet 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+
+                <label for="service">Escolha o Serviço:</label>
+                <select id="service" name="service" required>
+                    <option value="banho-hidratacao">Banho e Hidratação</option>
+                    <option value="banho-tosa">Banho e Tosa Higiênica</option>
+                </select>
+
+                <fieldset>
+                    <legend>Forma de Atendimento:</legend>
+                    <label><input type="radio" name="pickup" value="petshop" checked> Levar até a Petshop</label>
+                    <label><input type="radio" name="pickup" value="telebusca"> Tele-busca</label>
+                </fieldset>
+
+                <label for="date">Escolha a Data e Hora:</label>
+                <input type="datetime-local" id="date" name="date" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre</h2>
+                <p>PetCare é a sua solução para o cuidado e bem-estar do seu pet. Oferecemos uma ampla gama de produtos e serviços para garantir que seu amigo de quatro patas esteja sempre feliz e saudável.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:contato@petcare.com">contato@petcare.com</a></p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua dos Animais, 123, Canoas - RS</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetCare. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

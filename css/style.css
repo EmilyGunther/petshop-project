@@ -1,0 +1,425 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #000000aa;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    gap: 20px; /* Adicionado gap entre logo e barra de pesquisa */
+}
+
+/* Estilos para o banner */
+.banner {
+    width: 100%;
+    height: 300px; /* Definindo a altura do banner */
+    background-color: #43E2C5; /* Cor de fundo ou uma imagem */
+    background-image: url('../images/banner.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Cor do texto branca */
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 80%;
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe 100% da altura da janela */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém o conteúdo organizado */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Garante que a imagem cubra o fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Define o nível de opacidade da imagem */
+    z-index: -1; /* Envia o background para trás do conteúdo */
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do background */
+}
+
+/* Estilo para o nome PetCare */
+.logo h1 {
+    font-size: 50px;
+    color: #43E2C5;
+    font-weight: 600;
+    position: relative; /* Alterado para evitar posicionamento absoluto */
+    left: 0; /* Centraliza ao lado esquerdo */
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 40%;
+    height: 52.68px;
+    position: relative;
+    left: 0; /* Remove o afastamento à esquerda */
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-left: 20px; /* Aproxime da logo */
+}
+
+/* Estilo do campo de input da barra de pesquisa */
+.search-bar input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Estilo do ícone da lupa */
+.search-bar i {
+    color: #000;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Estilo para o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px; /* Alinhe mais à esquerda, próximo da barra de pesquisa */
+    padding: 0;
+}
+
+/* Estilos para os itens da lista */
+nav ul li a {
+    text-decoration: none;
+    color: #43E2C5;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Ajuste ao passar o mouse */
+nav ul li a:hover {
+    color: #6bfde3; /* Cor alterada para #43E2C5 */
+}
+
+/* Estilos para a seção de produtos */
+.products {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os produtos na tela */
+}
+
+.product {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda fina */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center;
+    width: 300px; /* Largura fixa */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.product-carousel-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #43E2C5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-container button.prev {
+    left: 10px;
+}
+
+.carousel-container button.next {
+    right: 10px;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #43E2C5;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+}
+/* Estilos para o carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ajustado para o tamanho do container */
+    height: auto; /* Ajustado para o tamanho das imagens */
+    overflow: hidden;
+}
+
+.product-carousel-img {
+    width: 100%;
+    height: auto;
+    display: none; /* Oculta todas as imagens por padrão */
+}
+
+.carousel-container img:first-child {
+    display: block; /* Exibe apenas a primeira imagem por padrão */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #43E2C5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+section.login {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.login h2 {
+    color: #43E2C5;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos para os campos de input */
+form label {
+    font-size: 16px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form input[type="date"],
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilo para os fieldsets */
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-size: 18px;
+    color: #43E2C5;
+    padding: 0 10px;
+}
+
+/* Botões */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #43E2C5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #36bca2;
+}
+
+/* Estilos para a seção de serviços */
+.services {
+    padding: 20px;
+}
+
+.service-form {
+    max-width: 600px; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.service-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service-form input,
+.service-form select,
+.service-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service-form button {
+    background-color: #43E2C5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.service-form button:hover {
+    background-color: #36b2a0;
+}
+
+.service-form fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.service-form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-form .radio-group {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.service-form .radio-group label {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service-form .radio-group input[type="radio"] {
+    margin-right: 10px; /* Espaçamento à direita do botão de rádio */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #43E2C5;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
